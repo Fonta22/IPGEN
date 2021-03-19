@@ -13,3 +13,7 @@ ipgen [num] [-s]
 
 `[-s]`: Use this flag only if you want to store the generated IP addresses in a file. The resulting
 adresses are stored inside `'logs/ip.log'`.
+
+### Resulting log:
+
+![iplog](./_img/iplog.png)
