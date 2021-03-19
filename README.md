@@ -17,3 +17,8 @@ adresses are stored inside `'logs/ip.log'`.
 ### Resulting log:
 
 ![iplog](./_img/iplog.png)
+
+If you want to clear the IP log, you can run the following command:
+```
+ipgen clear
+```
