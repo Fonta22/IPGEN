@@ -1,8 +1,8 @@
 # IPGEN — IP adress generator
 
 ## Description
-This program generates fake IP adresses, that can be stored in a file, or just be printed in the command line.
-Use the best option for your operative system, Windows or Unix.
+This program generates **fake IP adresses**, that can be stored in a file, or just be printed in the **command line**.
+Use the best option for your operative system, **Windows or Unix**.
 
 ## Usage
 ```
@@ -18,7 +18,7 @@ adresses are stored inside `'logs/ip.log'`.
 
 ![iplog](./_img/iplog.png)
 
-If you want to clear the IP log, you can run the following command:
+If you want to **clear** the IP log, you can run the following command:
 ```
 ipgen clear
 ```
