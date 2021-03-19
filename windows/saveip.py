@@ -5,6 +5,7 @@ from colorama import Fore, Style
 saveLoc = '.\\logs\\ip.log'
 
 def clearLog():
+    open(saveLoc, 'w').close()
     print('[' + Fore.YELLOW + ' Cleared Log ' + Style.RESET_ALL + ']:' + Fore.CYAN + f' \'{saveLoc}\'' + Style.RESET_ALL)
     exit()
 
