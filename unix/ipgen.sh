@@ -1,7 +1,11 @@
 #!/bin/sh
 
-if [ "$1" = "-s" ]; then
-    py saveip.py $1
-else
-    py createbot.py $1
-fi
+function ipgen() {
+    if [ "$2" = "-s" ]; then
+        python saveip.py $1
+    elif [ "$1" = "clear" ]; then
+        python saveip.py 0
+    else
+        python createbot.py $1
+    fi
+}
