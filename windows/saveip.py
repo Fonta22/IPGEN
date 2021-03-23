@@ -1,15 +1,20 @@
 import sys
 from ipgenerate import generateIP
 from colorama import Fore, Style
+from error import errorMsg
 
 saveLoc = '.\\logs\\ip.log'
 
 def clearLog():
     open(saveLoc, 'w').close()
-    print('[' + Fore.YELLOW + ' Cleared Log ' + Style.RESET_ALL + ']:' + Fore.CYAN + f' \'{saveLoc}\'' + Style.RESET_ALL)
+    print('[' + Fore.YELLOW + ' Cleared Log ' + Style.RESET_ALL + ']:' + Fore.CYAN + ' \'' + saveLoc + '\' ' + Style.RESET_ALL)
     exit()
 
-num = int(sys.argv[1])
+try:
+    num = int(sys.argv[1])
+except ValueError:
+    errorMsg()
+    exit()
 ipArr = generateIP(num)
 first = True
 
@@ -26,4 +31,4 @@ for i in range(num):
 
 fl.close()
 
-print('Saved [' + Fore.YELLOW + f' {num} ' + Style.RESET_ALL + f'] IP address at' + Fore.CYAN + f' \'{saveLoc}\'' + Style.RESET_ALL)
+print('Saved [ ' + Fore.YELLOW + str(num) + Style.RESET_ALL + ' ] IP address at' + Fore.CYAN + ' \'' + saveLoc +'\' ' + Style.RESET_ALL)

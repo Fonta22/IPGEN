@@ -1,11 +1,13 @@
 import sys
+from colorama import Fore, Style
 from ipgenerate import generateIP
+from error import errorMsg
 
 try:
     botnum = int(sys.argv[1])
     botsIP = generateIP(botnum)
-except IndexError:
-    print('You must enter an integer number: [generate [num] [-s]]')
+except (IndexError, ValueError) as e:
+    errorMsg()
     exit()
 
 
