@@ -5,7 +5,7 @@ This program generates **fake IP adresses**, that can be stored in a file, or ju
 Use the best option for your terminal, **Windows or Unix**.
 
 ## Usage
-Firstable, navigate to the IPGEN directory with your terminal. If you're on **Unix**, run:
+Firstable, navigate to the IPGEN `/unix` or `/windows`  directory (choose the best for your operative system) with your terminal. If you're on **Unix**, run:
 ```
 source ./ipgen.sh
 ```
