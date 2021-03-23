@@ -3,7 +3,7 @@ from ipgenerate import generateIP
 from colorama import Fore, Style
 from error import errorMsg
 
-saveLoc = '.\\logs\\ip.log'
+saveLoc = './logs/ip.log'
 
 def clearLog():
     open(saveLoc, 'w').close()
@@ -24,9 +24,9 @@ if num == 0:
 fl = open(saveLoc, 'w+')
 for i in range(num):
     if not first:
-        fl.write(f'\n{ipArr[i]}')
+        fl.write('\n' + ipArr[i])
     else:
-        fl.write(f'{ipArr[i]}')
+        fl.write(ipArr[i])
         first = False
 
 fl.close()
