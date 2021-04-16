@@ -2,14 +2,16 @@
 
 ## Description
 This program generates **fake IP adresses**, that can be stored in a file, or just be printed in the **command line**.
-Use the best option for your terminal, **Windows or Unix**.
+Use the best option for your terminal, **PowerShell or Unix Based**.
+
+**Note**: Folder structure: (windows -> PowerShell) (unix -> Unix)
 
 ## Usage
-Firstable, navigate to the IPGEN `/unix` or `/windows`  directory (choose the best for your operative system) with your terminal. If you're on **Unix**, run:
+Firstable, navigate to the IPGEN directory with your terminal. If you're on **Unix**, run:
 ```
 source ./ipgen.sh
 ```
-This just allows the command to be run and it's not necessary on **Widows**.
+This just allows the command to be run and it's not necessary in **PowerShell**.
 Then, just use the command.
 ```
 ipgen [num] [-s]
@@ -19,7 +21,7 @@ ipgen [num] [-s]
 `[-s]`: Use this flag only if you want to store the generated IP addresses in a file. The resulting
 adresses are stored inside `'logs/ip.log'`.
 
-**Note**: In **Windows** you'll need to add `.\` before the command, so run it like this:
+**Note**: In **PowerShell** you'll need to add `.\` before the command, so run it like this:
 ```
 .\ipgen [num] [-s]
 ```
@@ -34,3 +36,5 @@ If you want to **clear** the IP log, you can run the following command:
 ```
 ipgen clear
 ```
+
+###### - Fonta22
