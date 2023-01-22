@@ -12,7 +12,7 @@ def generateIP(times):
     arrayIP = []
 
     for i in range(times):
-        rndArr = [randint(0, 256), randint(0, 256), randint(0, 256), randint(0, 256)]
+        rndArr = [randint(0, 255), randint(0, 255), randint(0, 255), randint(0, 255)]
         finalIP = '.'.join(str(x) for x in rndArr)
         arrayIP.append(finalIP)
     
