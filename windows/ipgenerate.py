@@ -13,6 +13,14 @@ def generateIP(times):
 
     for i in range(times):
         rndArr = [randint(0, 255), randint(0, 255), randint(0, 255), randint(0, 255)]
+        if rndArr[0] == 192: # Use these how you wish fonta
+            privateip = true
+        elif rndArr[0] == 172 and rndArr == 16:
+            privateip = true
+        elif rndArr[0] == 10:
+            privateip= true
+        else:
+            pass
         finalIP = '.'.join(str(x) for x in rndArr)
         arrayIP.append(finalIP)
     
